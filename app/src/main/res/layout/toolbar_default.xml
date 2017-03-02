@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weknowall.cn.wuwei.widget.ToolBar
+    android:id="@+id/toolbar"
+    style="@style/LaoMao.Widget.Toolbar.Default"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    />

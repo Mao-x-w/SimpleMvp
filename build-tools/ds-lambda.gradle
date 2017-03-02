@@ -1,0 +1,18 @@
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    retrolambda {
+        jvmArgs '-noverify'
+        javaVersion JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    def librariesDependencies=rootProject.ext.librariesDependencies
+    retrolambdaConfig librariesDependencies.retrolambda
+}

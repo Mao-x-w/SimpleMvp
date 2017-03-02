@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+
+    <!-- main -->
+    <string name="main_edit_text">EditText</string>
+    <string name="main_retrofit">Retrofit</string>
+
+    <string name="retrofit_get_service_data">获取网络数据</string>
+
+    <string name="plus_refresh_footer_loading">加载中</string>
+    <string name="plus_refresh_footer_error">加载失败</string>
+    <string name="plus_refresh_footer_nomore">没有更多了</string>
+    <string name="recycler_hint_head_time">上次更新：</string>
+
+    <string-array name="ptr_recycler_refresh_hint">
+        <item>下拉刷新</item>
+        <item>松开刷新数据</item>
+        <item>正在加载•••</item>
+        <item>加载完成</item>
+    </string-array>
+    
+    <string-array name="recommend_page_title">
+        <item>周排行</item>
+        <item>月排行</item>
+        <item>总排行</item>
+    </string-array>
+
+    <string-array name="discover_page_title">
+        <item>科技</item>
+        <item>科普</item>
+        <item>开胃</item>
+        <item>生活</item>
+        <item>创意</item>
+    </string-array>
+
+    <string name="cube_ptr_last_update">上次更新: </string>
+    <string name="cube_ptr_hours_ago"> 小时之前</string>
+    <string name="cube_ptr_minutes_ago"> 分钟之前</string>
+    <string name="cube_ptr_seconds_ago"> 秒之前</string>
+
+    <string name="register_send_verify_time">倒计时(%s)</string>
+    <string name="register_send_verify">发送验证码</string>
+    <string name="please_enter_username">请输入手机号</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="login_success">登录成功</string>
+    <string name="comment_number">共%s条回复</string>
+    <string name="release_reply">发表</string>
+    <string name="reply_commer">回复 %s</string>
+    <string name="write_your_comment">写下你的评论...</string>
+    <string name="please_write_comment_content">请填写评论内容</string>
+    <string name="comment_success">评论成功</string>
+    <string name="my_comment">我的评论</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_news">我的消息</string>
+    <string name="personal_setting">个人设置</string>
+    <string name="user_protocal">用户协议</string>
+    <string name="logout">退出登陆</string>
+    <string name="login_to_comment">点击登陆后可评论</string>
+    <string name="my_space">个人中心</string>
+    <string name="comment_your_video">评论了你的视频：</string>
+    <string name="reply">回复</string>
+    <string name="setting_nick_name">游客</string>
+    <string name="setting_desc">无微不知</string>
+    <string name="setting_contact">131xxxx3015</string>
+    <string name="save_success">保存成功</string>
+    <string name="image_picker_gallery">相册</string>
+    <string name="image_picker_camera">拍照</string>
+    <string name="text_cancel">取消</string>
+    <string name="main_mvp_test">MVPTEST</string>
+
+
+</resources>

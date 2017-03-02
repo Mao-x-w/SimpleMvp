@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+apply from: '../build-tools/app-config-android.gradle'
+
+apply from: '../build-tools/ds-dagger.gradle'
+apply from: '../build-tools/ds-lambda.gradle'
+apply from: '../build-tools/ds-test.gradle'
+
+android{
+
+    def buildConfig = rootProject.extensions.getByName("ext")
+
+    buildTypes{
+        release{
+            buildConfigField("String","HTTP_HOST",'"' + buildConfig.getAt("httpHost").toString() + '"')
+        }
+        debug{
+            buildConfigField("String", "HTTP_HOST", '"' + buildConfig.getAt("httpHostTest").toString() + '"')
+        }
+    }
+
+
+}
+
+dependencies {
+    compile project(':app_domain')
+    compile project(':app_common')
+
+    def androidSupportDependencies = rootProject.ext.androidSupportDependencies
+    def librariesDependencies=rootProject.ext.librariesDependencies
+
+    compile androidSupportDependencies.annotations
+    compile librariesDependencies.fastJson
+    compile librariesDependencies.retrofit
+    compile librariesDependencies.rxJava
+    compile librariesDependencies.retrofit_rxjava
+    compile librariesDependencies.retrofit_fastJson
+    compile librariesDependencies.logger
+
+}

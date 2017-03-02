@@ -1,0 +1,19 @@
+apply plugin: 'com.android.library'
+
+apply from: '../build-tools/ds-dagger.gradle'
+apply from: '../build-tools/ds-test.gradle'
+apply from: '../build-tools/ds-lambda.gradle'
+apply from: '../build-tools/app-config-android.gradle'
+
+dependencies {
+    compile project(':app_domain')
+    compile project(':app_data')
+    compile project(':app_common')
+
+    def androidDependencies = rootProject.ext.androidSupportDependencies
+    def librariesDependencies=rootProject.ext.librariesDependencies
+
+    compile androidDependencies.annotations
+    compile librariesDependencies.rxAndroid
+
+}

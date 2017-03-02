@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'android-apt'
+
+apply from: '../build-tools/ds-test.gradle'
+apply from: '../build-tools/ds-lambda.gradle'
+apply from: '../build-tools/ds-dagger.gradle'
+
+
+android {
+    def buildConfig = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion buildConfig.getAt("androidCompileSdkVersion")
+    buildToolsVersion buildConfig.getAt("androidBuildToolsVersion")
+
+    signingConfigs {
+        config {
+//            storeFile file("../build-tools/wuwei.jks")
+//            keyAlias buildConfig.getAt("keyAliasRelease")
+//            keyPassword buildConfig.getAt("keyPasswordRelease")
+//            storePassword buildConfig.getAt("storePasswordRelease")
+        }
+    }
+
+    defaultConfig {
+        applicationId buildConfig.getAt("applicationId")
+        minSdkVersion buildConfig.getAt("androidMinSdkVersion")
+        targetSdkVersion buildConfig.getAt("androidTargetSdkVersion")
+        versionCode buildConfig.getAt("versionCode")
+        versionName buildConfig.getAt("versionName")
+
+        signingConfig signingConfigs.config
+
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations{
+        all*.exclude group: 'com.mob.commons', module: 'share_sdk'
+    }
+
+    publishNonDefault true
+}
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile project(':app_presenter')
+    compile project(':app_domain')
+
+    def androidSupportDependencies = rootProject.ext.androidSupportDependencies
+    def librariesDependencies=rootProject.ext.librariesDependencies
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile androidSupportDependencies.support_v7
+    compile androidSupportDependencies.design
+    compile androidSupportDependencies.recyclerView
+
+    compile librariesDependencies.recyclerViewDivider
+    compile librariesDependencies.butterKnife
+    compile librariesDependencies.logger
+    compile librariesDependencies.rxJava
+    compile librariesDependencies.rxBus
+    compile librariesDependencies.rxAndroid
+    compile librariesDependencies.retrofit
+    compile librariesDependencies.retrofit_rxjava
+    compile librariesDependencies.retrofit_fastJson
+    compile librariesDependencies.canRefresh
+    compile librariesDependencies.canRefreshRecycler
+    compile librariesDependencies.jiecaoVideoPlayer
+    compile librariesDependencies.glide
+    compile librariesDependencies.glide_transform
+    compile librariesDependencies.glide_okhttp
+
+    apt librariesDependencies.butterKnife_compiler
+
+    compile name:'SMSSDK-2.1.3',ext:'aar'
+
+}

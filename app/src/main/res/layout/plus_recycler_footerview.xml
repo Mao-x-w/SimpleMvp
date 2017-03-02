@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weknowall.cn.wuwei.widget.plus.PlusRecyclerHeaderFooter
+    android:id="@+id/plus_refresh_footer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/plus_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_70"
+        >
+
+        <ImageView
+            android:id="@+id/plus_footer_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:id="@+id/plus_footer_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/size_20"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/plus_refresh_footer_loading"
+            />
+
+        <ProgressBar
+            android:id="@+id/plus_footer_progress"
+            style="@style/LaoMao.Widget.ProgressBar.Loading"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_100"
+            />
+    </FrameLayout>
+</com.weknowall.cn.wuwei.widget.plus.PlusRecyclerHeaderFooter>

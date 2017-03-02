@@ -1,0 +1,5 @@
+include ':app',
+        ':app_presenter',
+        ':app_data',
+        ':app_domain',
+        ':app_common'

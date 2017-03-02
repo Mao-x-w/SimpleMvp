@@ -1,0 +1,60 @@
+ext {
+
+    androidSupportLibraryVersion = '24.2.0'
+    butterKnifeVersion = "8.4.0"
+    recyclerViewDivider = "1.4.0"
+    loggers = '1.15'
+    rxAndroidVersion = '1.2.1'
+    rxBusVersion = '1.0.5'
+    rxJavaVersion = '1.1.9'
+    retrolambdaVersion = '2.3.0'
+    retrofitVersion = '2.1.0'
+    retrofitRxJavaVersion = '2.1.0'
+    retrofitFastJsonVersion = '2.1.0'
+    fastJsonVersion = '1.2.15'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    daggerVersion = '2.7'
+    canRefreshVersion = '1.0.5'
+    canRefreshRecyclerVersion = '1.0.4'
+    jiecaoVideoPlayerVersion = '4.8.1'
+    glideVersion = '3.6.1'
+    glideTransformVersion = '1.0.8'
+    glideOkHttpVersion = '1.4.0@aar'
+
+    androidSupportDependencies = [
+            support_v7  : "com.android.support:appcompat-v7:${androidSupportLibraryVersion}",
+            support_v4  : "com.android.support:support-v4:${androidSupportLibraryVersion}",
+            recyclerView: "com.android.support:recyclerview-v7:${androidSupportLibraryVersion}",
+            design      : "com.android.support:design:${androidSupportLibraryVersion}",
+            annotations : "com.android.support:support-annotations:${androidSupportLibraryVersion}"
+    ]
+
+    librariesDependencies = [
+            butterKnife              : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            butterKnife_compiler     : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            recyclerViewDivider      : "com.yqritc:recyclerview-flexibledivider:${recyclerViewDivider}",
+            logger                   : "com.orhanobut:logger:${loggers}",
+            rxAndroid                : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            rxBus                    : "com.hwangjr.rxbus:rxbus:${rxBusVersion}",
+            rxJava                   : "io.reactivex:rxjava:${rxJavaVersion}",
+            retrolambda              : "net.orfjackal.retrolambda:retrolambda:${retrolambdaVersion}",
+            retrofit                 : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofit_rxjava          : "com.squareup.retrofit2:adapter-rxjava:${retrofitRxJavaVersion}",
+            fastJson                 : "com.alibaba:fastjson:${fastJsonVersion}",
+            retrofit_fastJson        : "org.ligboy.retrofit2:converter-fastjson-android:${retrofitFastJsonVersion}",
+            javaxInject              : "javax.inject:javax.inject:${javaxInjectVersion}",
+            javaxAnnotation          : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            dagger                   : "com.google.dagger:dagger:${daggerVersion}",
+            daggerCompiler           : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            canRefresh               : "com.canyinghao:canrefresh:${canRefreshVersion}",
+            canRefreshRecycler       : "com.canyinghao:canrecyclerview:${canRefreshRecyclerVersion}",
+            jiecaoVideoPlayer        : "fm.jiecao:jiecaovideoplayer:${jiecaoVideoPlayerVersion}",
+            glide                    : "com.github.bumptech.glide:glide:${glideVersion}",
+            glide_transform          : "jp.wasabeef:glide-transformations:${glideTransformVersion}",
+            glide_okhttp             : "com.github.bumptech.glide:okhttp3-integration:${glideOkHttpVersion}",
+
+            stickyHeadersRecyclerView: "com.timehop.stickyheadersrecyclerview:library:0.4.3@aar"
+    ]
+
+}

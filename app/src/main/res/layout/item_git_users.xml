@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_100"
+    android:paddingLeft="@dimen/size_15"
+    android:paddingRight="@dimen/size_15"
+    >
+
+    <com.weknowall.cn.wuwei.widget.image.CircleImageView
+        android:id="@+id/git_users_avator"
+        android:layout_width="@dimen/size_80"
+        android:layout_height="@dimen/size_80"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:id="@+id/git_users_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_40"
+        android:layout_toRightOf="@+id/git_users_avator"
+        android:text="jack"
+        android:textSize="@dimen/size_25"
+        />
+
+    <View
+        android:layout_alignParentBottom="true"
+        style="@style/LaoMao.Widget.Line.Grey"
+        />
+</RelativeLayout>

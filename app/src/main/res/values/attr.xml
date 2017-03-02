@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 限制字数的EditText -->
+    <declare-styleable name="CustomLimitNumEditText">
+        <attr name="edit_text_hint" format="string"/>
+        <attr name="edit_text_total_num" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="QuickSideBarView">
+        <attr name="sidebarTextColor" format="color|reference"/>
+        <attr name="sidebarBackgroundColor" format="color|reference"/>
+        <attr name="sidebarTextColorChoose" format="color|reference"/>
+        <attr name="sidebarTextSize" format="dimension"/>
+        <attr name="sidebarTextSizeChoose" format="dimension"/>
+        <attr name="sidebarItemHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TabViewGroup">
+        <attr name="SelectedBackground" format="reference|color"/>
+        <attr name="UnSelectedBackground" format="reference|color"/>
+        <attr name="SelectedTextColor" format="color"/>
+        <attr name="UnSelectTextColor" format="color"/>
+        <!-- The parent ID for child item, set this for add childs or get childs -->
+        <attr name="parentId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxView">
+        <attr name="si_speed" format="dimension"/>
+        <attr name="si_src" format="reference"/>
+        <attr name="si_sceneLength" format="integer"/>
+        <attr name="si_randomness" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="ri_radius" format="enum">
+            <enum name="small" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="large" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WebImageView">
+        <attr name="wi_loading" format="reference"/>
+    </declare-styleable>
+
+    <!-- 九宫格图片 -->
+    <declare-styleable name="NineGridImageView">
+        <attr name="singleImageWidth" format="dimension"/>
+        <attr name="singleImageHeight" format="dimension"/>
+        <attr name="imgGap" format="dimension"/>
+        <attr name="maxSize" format="integer"/>
+        <attr name="showStyle" format="enum">
+            <enum name="grid" value="0"/>
+            <enum name="fill" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

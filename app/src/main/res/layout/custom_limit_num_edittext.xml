@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/custom_limit_num_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_13"
+        android:gravity="top"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_10"
+        android:paddingTop="@dimen/size_13"
+        android:textColor="@color/color_grey_333333"
+        android:scrollbars="vertical"
+        android:focusableInTouchMode="true"
+        android:fadeScrollbars="true"
+        android:scrollHorizontally="false"
+        android:background="@null"
+        android:textSize="@dimen/size_19"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_7"
+        android:paddingBottom="@dimen/size_13"
+        >
+
+        <TextView
+            android:id="@+id/custom_limit_num_edittext_current_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/custom_limit_num_edittext_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            />
+
+        <TextView
+            android:id="@+id/custom_limit_num_edittext_total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

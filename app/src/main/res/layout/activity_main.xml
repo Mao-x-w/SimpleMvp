@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/main_mvp_test"
+        android:layout_width="@dimen/size_120"
+        android:layout_height="@dimen/size_60"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"
+        android:text="@string/main_mvp_test"
+        android:background="@drawable/draw_shape_round_rectangle_white_solid"
+        />
+
+</LinearLayout>

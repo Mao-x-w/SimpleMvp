@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="LaoMao" />
+
+    <style name="LaoMao.Widget"/>
+
+    <style name="LaoMao.Theme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 主题色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 主题色-暗 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 各控制元件(如：check box、switch 或是 radio) 被勾选 (checked) 或是选定 (selected) 的颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--window默认背景颜色-->
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+        <!--字体默认-->
+        <item name="android:textColor">@color/color_grey_333333</item>
+        <item name="android:textColorPrimary">@color/color_grey_333333</item>
+        <!--hint时字体的颜色-->
+        <item name="android:textColorHint">@color/color_grey_999999</item>
+    </style>
+
+    <!-- application默认主题 -->
+    <style name="LaoMao.Theme.Base" parent="@style/LaoMao.Theme">
+
+    </style>
+
+
+    <style name="LaoMao.Widget.ProgressBar.Loading" parent="Widget.AppCompat.ProgressBar"/>
+
+    <!-- 透明dialog -->
+    <style name="LaoMao.Widget.Dialog.Transparent" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="main">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="mainImage">
+        <item name="android:layout_width">@dimen/size_36</item>
+        <item name="android:layout_height">@dimen/size_36</item>
+    </style>
+
+    <style name="mainText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_selector_main_tab</item>
+    </style>
+
+    <style name="LaoMao.Widget.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="actionBarSize">@dimen/size_60</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/size_60</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:textSize">@dimen/size_24</item>
+        <item name="titleMargins">0dp</item>
+        <item name="maxButtonHeight">@dimen/size_60</item>
+        <item name="actionOverflowButtonStyle">@null</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="contentInsetStart">@dimen/size_15</item>
+        <item name="contentInsetStartWithNavigation">@dimen/size_60</item>
+        <item name="navigationIcon">@drawable/draw_vector_navigate_arrow</item>
+    </style>
+
+    <style name="LaoMao.Widget.Toolbar.Default" parent="LaoMao.Widget.Toolbar"/>
+
+    <style name="LaoMao.Widget.Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_1</item>
+    </style>
+
+    <style name="LaoMao.Widget.Line.Grey">
+        <item name="android:background">@color/color_line_default</item>
+    </style>
+
+    <!-- 全屏 -->
+    <style name="LaoMao.Theme.Base.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="loginImage">
+        <item name="android:layout_width">@dimen/size_60</item>
+        <item name="android:layout_height">@dimen/size_60</item>
+    </style>
+
+    <style name="loginEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/size_23</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/color_grey_666666</item>
+    </style>
+
+    <style name="registerEditText">
+        <item name="android:layout_width">@dimen/size_300</item>
+        <item name="android:layout_height">@dimen/size_60</item>
+        <item name="android:paddingLeft">@dimen/size_10</item>
+        <item name="android:background">
+            @drawable/draw_shape_round_rectangle_grey_stroke_white_solid
+        </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="LaoMao.Widget.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+        <item name="tabTextAppearance">@style/MeiShi.TextAppearance</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+    </style>
+
+    <style name="MeiShi.TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+        <item name="android:textSize">@dimen/size_21</item>
+    </style>
+
+    <style name="LaoMao.Widget.TabLayout.Recommend">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">@dimen/size_2</item>
+    </style>
+
+    <!-- 矩形按钮 -->
+    <style name="LaoMao.Widget.Button.Rectangle"  parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_60</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_21</item>
+    </style>
+
+</resources>

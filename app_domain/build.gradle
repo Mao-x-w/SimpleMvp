@@ -1,0 +1,12 @@
+apply plugin: 'com.android.library'
+
+apply from: '../build-tools/ds-test.gradle'
+apply from: '../build-tools/app-config-android.gradle'
+
+dependencies {
+    def librariesDependencies=rootProject.ext.librariesDependencies
+
+    compile librariesDependencies.logger
+    compile librariesDependencies.rxJava
+    compile librariesDependencies.javaxInject
+}
