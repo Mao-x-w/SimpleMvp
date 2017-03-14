@@ -83,6 +83,7 @@ dependencies {
     compile librariesDependencies.glide
     compile librariesDependencies.glide_transform
     compile librariesDependencies.glide_okhttp
+    compile librariesDependencies.swipeDeleteRecycler
 
     apt librariesDependencies.butterKnife_compiler
 

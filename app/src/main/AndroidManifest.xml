@@ -40,7 +40,12 @@
         </activity>
 
         <activity android:name=".ui.activity.MainActivity"/>
-        <activity android:name=".ui.activity.GitUsersActivity"/>
+        <activity android:name=".ui.activity.GitUsersActivity"
+            android:label="github用户"
+            />
+        <activity android:name=".ui.activity.SwipeDeleteRecyclerViewActivtiy"
+            android:label="侧滑删除"
+            />
     </application>
 
 </manifest>

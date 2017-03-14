@@ -66,7 +66,9 @@
     <string name="image_picker_gallery">相册</string>
     <string name="image_picker_camera">拍照</string>
     <string name="text_cancel">取消</string>
-    <string name="main_mvp_test">MVPTEST</string>
+    <string name="main_mvp_test">MVP DEMO</string>
+    <string name="main_swipe_delete">侧滑删除</string>
+    <string name="remove_success">移除成功</string>
 
 
 </resources>

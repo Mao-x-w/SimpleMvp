@@ -13,10 +13,10 @@
         style="@style/LaoMao.Widget.Line.Grey"
         />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/git_users_recycler_view"
+    <com.weknowall.cn.wuwei.widget.plus.df.PlusSwipeDeleteRecyclerView
+        android:id="@+id/swipe_delete_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/white"></android.support.v7.widget.RecyclerView>
+        android:background="@android:color/white"></com.weknowall.cn.wuwei.widget.plus.df.PlusSwipeDeleteRecyclerView>
 
 </LinearLayout>
